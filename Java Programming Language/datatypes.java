@@ -15,8 +15,12 @@ public class datatypes {
 
         //long -> very large size integer
         //double -> very large size floating point numbers
-
         short num = 240;
         System.out.println(num);
+
+        //Type casting
+        float a = 34.15f;
+        int c = (int) a;
+        System.out.println(c);
     }
 }
