@@ -5,15 +5,15 @@ public class prime {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your number : ");
         int n = sc.nextInt();
-        int flag = 0;
+        boolean isPrime = true;
         for (int i = 2; i < n; i++) {
-            if (n % i == 0) {
+            if (n % i == 0) { //n is a multiple of i, where i is neither 1 nor n
                 System.out.println("Not a prime number");
-                flag = 1;
+                isPrime = false;
                 break;
             }
         }
-        if (flag == 0) {
+        if (isPrime) {
             System.out.println("It is a prime number");
         }
     }
