@@ -27,6 +27,30 @@ public class StringBasics {
         String lastName = "Stark";
         String name = firstName + " " + lastName;
         System.out.println(name);
+
+        // COMPARISON
+        String s1 = "Tony";
+        String s2 = "Tony";
+        String s3 = new String("Tony");
+
+        if (s1 == s2) { // true
+            System.out.println("Strings are equal");
+        } else {
+            System.out.println("Strings are unequal");
+        }
+
+        if (s1 == s3) { // false
+            System.out.println("Strings are equal");
+        } else {
+            System.out.println("Strings are unequal");
+        }
+
+        // .equals() function
+        if (s1.equals(s3)) { // true -> compares values
+            System.out.println("Strings are equal");
+        } else {
+            System.out.println("Strings are unequal");
+        }
     }
 
     // To extract and print all characters of a String
@@ -36,4 +60,5 @@ public class StringBasics {
         }
         System.out.println();
     }
+
 }
