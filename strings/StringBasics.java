@@ -51,6 +51,21 @@ public class StringBasics {
         } else {
             System.out.println("Strings are unequal");
         }
+
+        // Substring
+        String msg = "HelloWorld";
+        String newMsg = msg.substring(0, 4);
+        System.out.println(newMsg);
+        System.out.println(substring(msg, 3, 7));
+
+    }
+
+    public static String substring(String str, int si, int ei) {
+        String substr = "";
+        for (int i = si; i < ei; i++) {
+            substr += str.charAt(i);
+        }
+        return substr;
     }
 
     // To extract and print all characters of a String
