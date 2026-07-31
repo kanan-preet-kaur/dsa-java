@@ -14,7 +14,7 @@ class SortStrings {
      * <p>
      * Time Complexity: O(n log n)
      * <p>
-     * Space Complexity: O(n log n)
+     * Space Complexity: O(n)
      * 
      * @param arr The array of Strings to be sorted in ascending order
      * @param si  The starting index of the subarray
@@ -35,9 +35,6 @@ class SortStrings {
     }
 
     public static void merge(String[] arr, int si, int mid, int ei) {
-        if (si >= ei) {
-            return;
-        }
         String[] temp = new String[ei - si + 1];
         int i = si;
         int j = mid + 1;
